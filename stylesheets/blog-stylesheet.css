@@ -71,8 +71,9 @@ li:last-child {padding-right: 0;}
     width: 15%;
 }
 
-.side_bar-links li {
-    margin-left: 10px;
+.sidebar-links li {
+    /*margin-left: 10px;*/
+    margin-bottom: 10px;
 }
 
 .page_content {
@@ -103,6 +104,12 @@ li:last-child {padding-right: 0;}
     margin-right:10%;
     height:auto;
 }
+
+/*css for the blog posts*/
+.blog_text h4 {
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width : 481px) {
 /* Styles */

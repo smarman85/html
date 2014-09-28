@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fireside Chat</title>
+    <title>Display in CSS</title>
     <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
 </head>
 <body>
@@ -34,20 +34,45 @@
 
                     <div class="title">
 
-                        <h2>Fireside Chat</h2>
-                        <span class="date_posted">Posted On: 09.19.14</span>
+                        <h2>Display What?</h2>
+                        <span class="date_posted">Posted On: 09.27.14</span>
 
                     </div><?php // end title ?>
 
                     <div class="blog_text">
 
-                        <p>
-                            I did a lot of research on places like DevBootCamp before starting the application process. The topics covered int the video are what initially attracted me to DBC. Their approach seems like it isn’t just about making coders, they want to make well rounded developers who are excited about their work and really contribute to a team environment. I am really excited to jump into the program and push myself to be a better developer and team member. It will be a huge difference from how I code now, but I am looking forward to try a new approach.
+
+                            <h4>Displaying Inline vs. inline-block</h4>
+
+                           <p> An element that is displayed inline will not break the flow of the elements around it. For example:</p>
+
+                            <img src="../imgs/ex1.png" alt="">
+
+                           <p> The word “line” sits inline with the words surrounding it as you would expect. Any changed to the  margins or padding will only change horizontal spacing and not affect spacing vertically. If we add a margin of 10px all the way around this element we will only see the space grow larger on the left and right and no change on the top or bottom.</p>
+
+                            <p>Width is also ignored by an element that is displayed inline. In the image below you can see what happens when margin 10px and a width of 300px is called on an inline element</p>
+
+
+                            <img src="../imgs/ex2.png" alt="">
+
+
+                            <h4>Inline-block:</h4>
+
+                            <p>An element set to inline-block will behave much in the same way as inline, with some very important differences. This type of display allows you, as the developer to set heights and widths and still remain within the flow of the elements surrounding it. The image below is an element that is displayed inline-block and has a height and width of 40px. You can see that the words remain somewhat inline, allow for widths and allow for vertical movement.</p>
+
+                            <img src="../imgs/ex3.png" alt="">
+
+
+
+                            <h4>Takeaways :</h4>
+
+                            <p>display inline :<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;will not accept height and width - it will just be ignored by the browser.<br>
+                            display inline-block:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;take a height and with and still stay somewhat inline.
+
                         </p>
 
-                        <p>
-                            After the watching the Fireside chat my perception of DBC is about the same. If anything, I am a little more inspired by it. It answered a lot of questions about how things will be once we get to the onsite program. I am excited to really push myself, get into different projects and start pair programing.
-                        </p>
 
                     </div> <?php //end blog text ?>
 
