@@ -1,0 +1,44 @@
+/* include your css here */
+
+body {
+
+            width:100%;
+        }
+        .title {
+            height: 20%;
+            width: 100%;
+            background-color: maroon;
+            margin-bottom:20px;
+        }
+        .title h1, .title h3 {
+            text-align: center;
+            color: #ffffff;
+            font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+        }
+        .content-image {
+            margin: 0 auto;
+        }
+        .content-image img{
+            position:relative;
+            padding-left:30%;
+        }
+        .main-content {
+            height:auto;
+            width: 90%;
+            margin:0 auto;
+            color:#ffffff;
+            background-color: gray;
+
+        }
+        .footer {
+            width: 100%;
+            height: 40px;
+            bottom:0;
+            position:fixed;
+            background-color: maroon;
+        }
+        .footer h5 {
+            padding: 0px  0;
+            text-align:center;
+            color: #ffffff;
+        }
