@@ -110,6 +110,21 @@ li:last-child {padding-right: 0;}
     margin-bottom: 20px;
 }
 
+.mark-down {
+    background-color: #303030;
+    margin:10px 0;
+    padding:10px;
+}
+
+.ruby-constant{
+    color: #7fffd4;
+}
+.ruby-identifier {
+    color: #ffdead;
+}
+.line-break {
+    padding-left: 25px;
+}
 
 @media only screen and (max-width : 481px) {
 /* Styles */
@@ -118,8 +133,8 @@ li:last-child {padding-right: 0;}
 }
 
 /*borders delete later*/
-/*.header {background-color: red;}*/
-/*.nav_bar {background-color: blue;}
+/*.header {background-color: red;}
+.nav_bar {background-color: blue;}
 .page_content {background-color: yellow;}
 .side_bar {background-color: green;}
 .title {background-color: gray;}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays and Hashes</title>
+    <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+
+    <div class="main_container">
+
+        <div class="header">
+
+            <img src="../imgs/header2-940x198.jpg" alt=""> <?php // fill in logo later or just use name ?>
+
+        </div>
+
+        <div class="nav_bar">
+
+            <ul class="nav">
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../recent_projects.html">Projects</a></li>
+
+            </ul>
+
+        </div> <?php // end nav_bar ?>
+
+        <div class="body_content">
+
+                <div class="page_content">
+
+                    <div class="title">
+
+                        <h2>TITLE</h2>
+                        <span class="date_posted">Posted On: 10.02.14</span>
+
+                    </div><?php // end title ?>
+
+                    <div class="blog_text">
+
+                        <p>
+                            Arrays and Hashes are very similar concepts in programing. Both are perfectly valid ways of holding a collection of data. Where these concepts truly differ is in how their information is accessed.
+                        </p>
+
+                        <p>
+                            Arrays are ordered, integer-indexed and like most programing languages zero-indexed.  This basically means that the elements contained in an array are in some type of order starting at 0. For instance, in the array below, the number 1 is in the zero position. The next element is in the 1 position and so on.
+                        </p>
+                        <div class="mark-down">
+                            <span class="ruby-constant">array</span><span class="ruby-identifier">     =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   [1,  2,  3,  4,   “string”] <br>
+                            position  L &nbsp;     0   1   2   3    4 <br>
+                            position R   -5  -4 -3  -2     -1 <br>
+                        </span>
+                        </div>
+                        <p>
+                            If we wanted to access the word string in the above array, we could do this in one of two ways. Since “string” is at index 4 we could access the element by calling the array with the index number in square brackets. Like so:
+                        </p>
+                        <div class="mark-down">
+                            <span class="ruby-constant">array</span><span class="ruby-identifier"> [4]</span>
+                        </div>
+
+                        <p>
+                            Another way we could access the same information has to do with the elements position from the end of the array. This is a little bit different from the normal, when basing position on the last element in the array we have to start at -1. This method is a great way to return the last element in an array of unknown depth. So based on the above array we could simply call:
+                        </p>
+                        <div class="mark-down">
+                            <span class="ruby-constant">array</span><span class="ruby-identifier"> [-1]</span>
+                        </div>
+                        <p>
+                            and we would get the word “string” from the same array.
+                        </p>
+                        <p>
+                            Hashes are great when your looking to store key-value paris. They function similarly to arrays but differ in the way you would index the information inside of them. Where arrays are based on 0 to the end of the array, Hashes are based on an arbitrary list of keys and values with no discernible order.
+                        </p>
+                        <p>
+                            An easy way to wrap your mind around what hashes are, is to think of them as a dictionary. Keys are like words and Values are like their definitions. For example lets build a hash that stores the ages of 3 dogs.
+                        </p>
+                        <div class="mark-down">
+                            <span class="ruby-constant">ages</span><span class="ruby-identifier"> = { <span class="line-break"><br>
+                               &nbsp;&nbsp;&nbsp;:Toby => 2, <br>
+                                &nbsp;&nbsp;&nbsp;:Klondike => 3, <br>
+                                &nbsp;&nbsp;&nbsp;:Lucky => 11 </span><br>
+                            }</span>
+                        </div>
+                        <p>
+                            If we wanted to get the age of a dog and we only knew the name, we could index the has
+                        </p>
+                        <div class="mark-down">
+                            <span class="ruby-constant">ages</span><span class="ruby-identifier">[:Toby]</span>
+                        </div>
+
+                        </p>
+
+                        <p>
+
+                        </p>
+
+                    </div> <?php //end blog text ?>
+
+                </div><?php // end page_content ?>
+
+            </div><?php // end body_content ?>
+
+            <div class="side_bar">
+
+                <h3>Blog Posts</h3>
+
+                <ul class="sidebar-links">
+
+                    <li><a href="t1-git-blog.html">Version Controll</a></li>
+                    <li><a href="c1-chefs-kitchen.html">Fireside Chat</a></li>
+                    <li><a href="t2-css-design.html">CSS Display</a></li>
+                    <li><a href="t4-arrays-hashes.html">Arrays & Hashes</a></li>
+
+                </ul>
+
+            </div> <?php //end side_bar ?>
+
+
+        <div class="clear"></div>
+
+        <div class="footer">
+
+            <ul>
+
+                <li><a href="https://www.linkedin.com/pub/sean-marman/22/6/869"><img src="../imgs/linkedin.png" alt=""></a></li>
+                <li><a href="https://twitter.com/smarman85"><img src="../imgs/twitter.png" alt=""></a></li>
+                <li><a href="https://github.com/smarman85"><img src="../imgs/GitHub.png" alt=""></a></li>
+                <li><a href="https://plus.google.com/u/0/108895157342241523043/posts"><img src="../imgs/google_plus.png" alt=""></a></li>
+
+            </ul>
+
+        </div> <?php // end footer ?>
+
+
+    </div> <?php //end main_container ?>
+
+</body>
+</html>
