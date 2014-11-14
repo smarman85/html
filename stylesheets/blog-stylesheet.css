@@ -40,10 +40,10 @@ li:last-child {padding-right: 0;}
     height: auto;
 }
 
-.nav_bar {
+/*.nav_bar {
     margin:0 auto;
     width: 80%;
-}
+}*/
 /*.nav li:last-child, footer ul li:last-child {
     padding-right: none;
 }*/
@@ -61,14 +61,19 @@ li:last-child {padding-right: 0;}
 .side_bar h3 {
     font-size: 1em;
     margin-bottom: 12px;
+    text-align: center;
 }
 .nav_bar {
     display: table;
 }
-
+.side_bar {background-color: #EE5929; height:auto;}
+.side_bar li {display: inline-block; padding-bottom: 16px;}
+.sidebar-links p {padding-bottom: 20px;}
+.sidebar-links { width:80%; margin: 0 auto;}
 .side_bar {
-    float:left;
-    width: 15%;
+   /* float:left;*/
+   clear:both;
+    width: 100%;
     margin-right: 10px;
 }
 
@@ -78,8 +83,8 @@ li:last-child {padding-right: 0;}
 }
 
 .page_content {
-    float:right;
-    width: 80%;
+    /*float:right;*/
+    width: 100%;
 }
 
 .title h2 {
@@ -102,20 +107,25 @@ li:last-child {padding-right: 0;}
 }
 .blog_text p { margin-bottom: 20px; }
 
-.footer {margin-top: 30px;}
+.footer {margin-top: 30px; background-color: #333333;}
 .footer ul {
     width: 40%;
     margin: 0 auto;
 }
 .footer img {
     width: 10%;
-    margin-right:10%;
+    margin: 15px;
     height:auto;
 }
+.header-blog
 
 /*css for the blog posts*/
 .blog_text h4 {
     margin-bottom: 20px;
+}
+.page_content {
+    width:80%;
+    margin: 0 auto;
 }
 
 .mark-down {
@@ -132,9 +142,19 @@ summary {background-color: #000; margin-bottom: 20px; padding: 10px; cursor: poi
 details p {border-bottom: 1px solid #000;}
 summary .tilde {color:red;}
 summary .command {color:#2FFF12;}
+
+.header-blog {background-color: #333333; width:100%; height: auto;  position: fixed; z-index: 100; }
+.header-blog img {border-radius: 246px; width: 80px; margin:10px; float:left;}
+.header-blog .nav {margin-top:38px; margin-right: 20px; float:right; width:480px;}
+.header-blog .nav li {}
+.header-blog .nav a {color:#ffffff; text-decoration: none; margin-left: 20px; font-family: Verdana, geneva, sans-serif;}
+.filler {height:100px; }
+
+
+
 @media only screen and (max-width : 481px) {
 /* Styles */
-.side_bar {display:none;}
+/*.side_bar {display:none;}*/
 .page_content, .nav_bar, .footer ul{ width:100%;}
 }
 
