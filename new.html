@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Blog</title>
+</head>
+<body>
+    <style>
+        * {margin: 0; padding:0;}
+        .container{ width:100%; top:0px; max-width: 1280px; }
+        .header {background-color: #333333; width:100%; height: auto;  position: fixed; z-index: 100; }
+        .header img {border-radius: 246px; width: 80px; margin:10px; float:left;}
+        .header .nav {margin-top:38px; margin-right: 20px}
+        .header .nav a {color:#ffffff; text-decoration: none; margin-left: 20px;}
+        .welcome {background-color: #878787; height:100vh; padding-top: 120px;}
+        .welcome, .about, .projects, .contact {text-align: center;}
+        .about {background-color: #FFFFFF; height:100vh;}
+        .projects {background-color: #EE5929; height:100vh;}
+        .contact {background-color: #878787; height:100vh;}
+        .git-cheat {background-color: #FFFFFF; height:100vh;}
+        .side_bar {background-color: #EE5929; height:100vh;}
+        .side_bar li {display: inline-block;}
+        .side_bar li:nth-child(1) {clear:right;}
+        .footer {background-color: #333333;}
+        .header .nav {float:right;}
+        .nav li {display: inline;}
+        summary {background-color: #000; margin-bottom: 20px; padding: 10px; cursor: pointer;}
+        details p {border-bottom: 1px solid #000;}
+        summary .tilde {color:red;}
+        summary .command {color:#2FFF12;}
+        .footer ul li {display: inline; text-align: center;}
+
+        .footer ul {width: 40%; margin: 0 auto; }
+        .footer img {width: 10%; margin-right:10%; height:auto; margin-top: 10px; margin-bottom: 10px;}
+        .clear {clear: both;}
+    </style>
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars3.githubusercontent.com/u/4985101?v=3&amps=460" alt="Me">
+            <ul class="nav">
+                <!-- <li><a href="#top">HOME</a></li> -->
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACTS</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">GIT CHEATSHEET</a></li>
+            </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="welcome">
+
+            <h2>Welcome to My Site</h2>
+
+            <div class="blog_text">
+
+                <p>
+                    I have been working in the field for a little over a year now. At the year mark I was not where I wanted to be so I decided to enroll in Dev BootCamp to increase my skills. Over the next few months I will be posting a lot of the stuff I learn to this site. I hope you enjoy it.
+                </p>
+
+            </div> <?php //end blog text ?>
+        </div><?php // end body_content ?>
+        <div class="about">
+            <p>
+                I am a Jr. Interactive Developer working in Sunny Southern California. After college I had a few random jobs before I landed on Web Development. Using my very limited experience with HTML and CSS, I decided to take a few classes at my local city college to pick up some more info.</p>
+            <p>
+                I tried to focus a little on front-end and back-end dev, just to see what I liked better. After spending some time in both arenas, I really got hooked on back-end development. Its fascinating to be able to all the behind the scenes work like logging user info in a database and making sites truly dynamic.
+            </p>
+        </div>
+        <div class="projects">
+
+            <div class="title">
+
+                <h2>Recent Projects</h2>
+
+            </div><?php // end title ?>
+
+            <div class="blog_text">
+
+                <p>
+                    For now this will be a work in progress due to time constraints.
+                </p>
+
+            </div> <?php //end blog text ?>
+
+        </div><?php // end project ?>
+        <div class="contact">
+
+            <p>
+                I guess for now the links on the bottom are the best ways to contact me, or atleast untill I get some free time to integrate some PHP into this.
+            </p>
+
+        </div> <?php //end blog text ?>
+        <div class="git-cheat">
+
+            <div class="title">
+
+                <h2>Git Cheat Sheet</h2>
+            </div>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git clone repo_from_git</span>
+                    </summary>
+                    <p>Initialized the directory as a git repo</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git checkout -b branch-name</span>
+                    </summary>
+                    <p>Makes a new branch off of the current branch</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git clone -d branch-name</span>
+                    </summary>
+                    <p>Deletes the branch branch-name</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git branch -v</span>
+                    </summary>
+                    <p>Shows available branches</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git stash</span>
+                    </summary>
+                    <p>Stashes local changes so they aren't overwritten by a pull</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git stash apply</span>
+                    </summary>
+                    <p>Applys the stashed changes after a pull</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git checkout -- track origin/branch-name</span>
+                    </summary>
+                    <p>Makes a new branch that tracks origin</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git fetch upstream BRANCH</span>
+                    </summary>
+                    <p>fetches changed from the upstream branch (usually master)</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git merge upstream/BRANCH</span>
+                    </summary>
+                    <p>Merges Changes from upstream</p>
+                </details>
+
+                <details>
+                    <summary>
+                        <span class="tilde">~</span><span class="command">:> git remote add upstream ssh_form_upstream_git_repo</span>
+                    </summary>
+                    <p>Addes the nickname "upstream" for the upstream repo. This is where changes will come from</p>
+                </details>
+
+        </div><?php // end page_content ?>
+        <div class="side_bar">
+
+            <h3>Blog Posts</h3>
+
+            <ul class="sidebar-links">
+
+                <li><a href="blog/t1-git-blog.html">Version Controll</a></li>
+                <li><a href="blog/c1-chefs-kitchen.html">Fireside Chat</a></li>
+                <li><a href="blog/t2-css-design.html">CSS Display</a></li>
+                <li><a href="blog/t4-arrays-hashes.html">Arrays & Hashes</a></li>
+                <li><a href="blog/c3_thinking-style.html">Meta-Thinking</a></li>
+                <li><a href="blog/t4-enumerable-methods.html">Group_By</a></li>
+                <li><a href="blog/c4-tech-issues.html">Issues in Tech</a></li>
+                <li><a href="blog/c5-feedback.html">Getting Feedback</a></li>
+                <li><a href="blog/t5-ruby-classes.html">Ruby Classes</a></li>
+                <li><a href="blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+                <li><a href="blog/t6-oop-concepts.html">Variable Scope</a></li>
+                <li><a href="blog/t6-javascript.html">JavaScript DOCs</a></li>
+                <li><a href="blog/c7-oop-concepts.html">Values</a></li>
+                <li><a href="blog/c8-conflict.html">Conflict</a></li>
+                <li><a href="blog/t8-tech.html">NoSQL</a></li>
+                <li><a href="blog/c9-questions.html">Asking Questions</a></li>
+
+            </ul>
+
+        </div> <?php //end side_bar ?>
+        <div class="footer">
+
+            <ul>
+
+                <li><a href="https://www.linkedin.com/pub/sean-marman/22/6/869"><img src="imgs/linkedin.png" alt=""></a></li>
+                <li><a href="https://twitter.com/smarman85"><img src="imgs/twitter.png" alt=""></a></li>
+                <li><a href="https://github.com/smarman85"><img src="imgs/GitHub.png" alt=""></a></li>
+                <li><a href="https://plus.google.com/u/0/108895157342241523043/posts"><img src="imgs/google_plus.png" alt=""></a></li>
+
+            </ul>
+
+        </div> <?php // end footer ?>
+    </div>
+</body>
+</html>
