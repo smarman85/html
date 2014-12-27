@@ -31,3 +31,33 @@ summary .command {color:#2FFF12;}
 .footer ul {width: 40%; margin: 0 auto; }
 .footer img {width: 10%; margin-right:10%; height:auto; margin-top: 10px; margin-bottom: 10px;}
 .clear {clear: both;}
+
+a {
+    color:#000000;
+    text-decoration: none;
+}
+
+a:hover {color:blue;}
+h1, h2, h3 {
+    font-family: times;
+}
+.page_content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.mark-down {
+    background-color: #303030;
+    margin:10px 0;
+    padding:10px;
+}
+.ruby-keyword {color:#00ffff;}
+.ruby-constant{color: #7fffd4;}
+.ruby-identifier {color: #ffdead;}
+.line-break {padding-left: 25px;}
+
+@media only screen and (max-width : 481px) {
+/* Styles */
+/*.side_bar {display:none;}*/
+.page_content, .nav_bar, .footer ul{ width:100%;}
+}
