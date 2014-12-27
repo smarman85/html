@@ -60,4 +60,5 @@ h1, h2, h3 {
 /* Styles */
 /*.side_bar {display:none;}*/
 .page_content, .nav_bar, .footer ul{ width:100%;}
+p { font-size: 24px;}
 }
