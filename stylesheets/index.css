@@ -58,6 +58,7 @@ h1, h2, h3 {
 .line-break {padding-left: 25px;}
 
 @media only screen and (max-width : 481px) {
+  font-weight: bold;
 /* Styles */
 /*.side_bar {display:none;}*/
 .page_content, .nav_bar, .footer ul{ width:100%;}
