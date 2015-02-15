@@ -1,0 +1,11 @@
+@import '_body';
+
+.header {
+  background-color: yellow;
+  .nav {
+    color: red;
+    a {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.body {
+  background-color: red; }
+  .body ul {
+    margin: 0 auto; }
+    .body ul li {
+      display: inline-block;
+      color: green; }
+
+.header {
+  background-color: yellow; }
+  .header .nav {
+    color: red; }
+    .header .nav a {
+      text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
