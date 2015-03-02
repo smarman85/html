@@ -1,0 +1,23 @@
+footer {
+  width: 100%;
+  background-color: $header-background;
+  margin-top: 5%;
+  padding: 4% 0;
+  & .social-links {
+    width: 40%;
+    margin: 0 auto;
+    a {
+      display: inline-block;
+      width: 20%;
+      margin-right: 4%;
+    }
+    a:last-child {
+      margin-right: none;
+    }
+    & img {
+      width: 80%;
+      height: auto;
+      border-radius: 18px;
+    }
+  }
+}
