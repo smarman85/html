@@ -117,8 +117,11 @@ h2:before {
     margin-left: 2%; }
     @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (min-width: 320px) {
       .projects article, .blog article {
+        border-bottom: 1px solid #cccccc;
+        padding: 15px 0;
         width: 100%;
-        float: none; } }
+        float: none;
+        margin: 0; } }
 
 .type-container {
   width: 25%;

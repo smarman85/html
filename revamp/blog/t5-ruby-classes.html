@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Blog</title>
+    <link rel="stylesheet" href="../stylesheets/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars3.githubusercontent.com/u/4985101?v=3&amps=460" alt="Me">
+            <ul class="nav">
+                <!-- <li><a href="#top">HOME</a></li> -->
+                <li><a href="../index.html">ABOUT</a></li>
+                <li><a href="../index.html">CONTACT</a></li>
+                <li><a href="../index.html">PROJECTS</a></li>
+            </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="filler"></div>
+
+        <div class="body_content">
+
+                <div class="page_content">
+
+                    <div class="title">
+
+                        <h2>Ruby Classes</h2>
+                        <span class="date_posted">Posted On: 10.19.14</span>
+
+                    </div><?php // end title ?>
+
+                    <div class="blog_text">
+
+                        <p>
+                            Classes are very important part of any programing language. They allow you to make larger scale applications and not have to worry about creating unique names for methods, let alone keep track of all of their names. In a sense classes act like a blueprint for building objects and house methods for that particular set of info.
+                        </p>
+
+                        <p>
+                            Setting up a class is very simple to do in Ruby. Over the next few steps we will be making a class that lists co-workers and the primary development language they know. For starters we can set up a new class by calling class with a name (by convention the first letter in the name is capitalized) like so:
+                        </p>
+
+                        <div class="mark-down">
+                            <span class="ruby-keyword">def</span><span class="ruby-identifier"> &nbsp; Coworkers</span><br /><br />
+                            <span class="ruby-keyword">end</span>
+                        </div>
+
+                        <p>
+                            Once that is all set up we can jump into the whole idea behind a class being a blueprint. At this point we will want to prepare our class for some of the info we will be gathering. Since we are dealing with people, I think we should get their name, type of developer they are and language they know. We can do this in an initialize method, which is just a method used to create the objects.
+                        </p>
+
+                        <div class="mark-down">
+                            <span class="ruby-keyword">def</span>
+                            <span class="ruby-identifier"> &nbsp; Coworkers</span><br /><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-keyword">def</span><span class="ruby-constant"> initialize(name, lang, dev_type)</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-identifier">@name = name</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-identifier">@lang = lang</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-identifier">@dev_type = dev_type</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-keyword">end</span><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-keyword">def</span><span class="ruby-constant"> print_info</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-keyword">puts</span>
+                            <span class="ruby-identifier"> "#{@name} is a #{@dev_type} who works mainly in #{@lang}."</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="ruby-keyword">end</span><br><br>
+                            <span class="ruby-keyword">end</span><br><br>
+                            <span class="ruby-keyword">p</span>
+                            <span class="ruby-constant"> me = </span>
+                            <span class="ruby-constant"> Coworkers.new("Sean", "PHP", "Backend")</span><br>
+                            <span class="ruby-keyword">p</span>
+                            <span class="ruby-constant"> me.print_info </span>
+
+                        </div>
+
+                        <p>
+                            The “@“ sign tells us that this is an instance variable, which is variable used to indicate that this variable is associated with this particular instance of the class. In the above code, we are getting name and language when we initialize the class.
+                        </p>
+
+                        <p>
+                            In the print_info method we access all of the info given and use the instance variables to print out a little blurb about specific people on the dev team. We can create new coworkers (or instances of the class) by creating a new variable and setting it equal to Coworkers.new(“Name”, “language”, “Backend”). By calling Coworkers.new with the arguments we are making a new instance of the coworker class. While this is a very simple example it can be easily expanded to include other, which makes classes a very important part of any programing language.
+                        </p>
+
+                        <p>
+                            This is a very basic question but it sheds a little light on how to set up classes. Hope it helps.
+                        </p>
+
+                    </div> <?php //end blog text ?>
+
+                </div><?php // end page_content ?>
+
+            </div><?php // end body_content ?>
+
+            <div class="side_bar">
+
+
+            <h3>Blog Posts</h3>
+
+            <ul class="sidebar-links">
+
+                <li><a href="bash_alias.html">Bash Profile Settings</a></li>
+                    <p>Speeding up your workflow by adding some useful shortcuts</p>
+                <li><a href="t1-git-blog.html">Version Controll</a></li>
+                    <p>The importance of GIT and how it knows when you make changes.</p>
+                <li><a href="c1-chefs-kitchen.html">Fireside Chat</a></li>
+                    <p>My perception of DBC after reading up on its dev culture.</p>
+                <li><a href="t2-css-design.html">CSS Display</a></li>
+                    <p>Making css display properties just a little more clear.</p>
+                <li><a href="t4-arrays-hashes.html">Arrays & Hashes</a></li>
+                    <p>The differences and similarites between Ruby arrays and Hashes</p>
+                <li><a href="c3_thinking-style.html">Meta-Thinking</a></li>
+                    <p>A little blurb on me and how I think.</p>
+                <li><a href="t4-enumerable-methods.html">Group_By</a></li>
+                    <p>Learning to use some of the amazing Ruby built in methods.</p>
+                <li><a href="c4-tech-issues.html">Issues in Tech</a></li>
+                    <p>Diversity: an issue facing the tech world today.</p>
+                <li><a href="c5-feedback.html">Getting Feedback</a></li>
+                    <p>Learning how to take feedback on my work</p>
+                <li><a href="t5-ruby-classes.html">Ruby Classes</a></li>
+                    <p>Getting a littl OOP with Ruby Classes</p>
+                <li><a href="c6-stereotype-threat.html">Stereotype Threat</a></li>
+                    <p>Confronting your biggest enemy, yourself.</p>
+                <li><a href="t6-oop-concepts.html">Variable Scope</a></li>
+                    <p>Variable scope and how to avoid some frustration</p>
+                <li><a href="t6-javascript.html">JavaScript DOCs</a></li>
+                    <p>What I like about Ruby Docs in relation to JavaScript Docs</p>
+                <li><a href="c7-oop-concepts.html">Values</a></li>
+                    <p>Getting to know a little bit about me and my values</p>
+                <li><a href="c8-conflict.html">Conflict</a></li>
+                    <p>Some thoughts on dealing with interpersonal conflict</p>
+                <li><a href="t8-tech.html">NoSQL</a></li>
+                    <p>How NoSQL databases are revolutionizing data.</p>
+                <li><a href="c9-questions.html">Asking Questions</a></li>
+                    <p>How to form better questions to not waste your peers time</p>
+                <li><a href="../git-cheatsheet.html">GIT CHEATSHEET</a></li>
+                    <p>Everyone GITs a little help every now and then.</p>
+
+            </ul>
+
+        </div> <?php //end side_bar ?>
+        <div class="footer">
+
+            <ul>
+
+                <li><a href="https://www.linkedin.com/pub/sean-marman/22/6/869"><img src="../imgs/linkedin.png" alt=""></a></li>
+                <li><a href="https://twitter.com/smarman85"><img src="../imgs/twitter.png" alt=""></a></li>
+                <li><a href="https://github.com/smarman85"><img src="../imgs/GitHub.png" alt=""></a></li>
+                <li><a href="https://plus.google.com/u/0/108895157342241523043/posts"><img src="../imgs/google_plus.png" alt=""></a></li>
+
+            </ul>
+
+        </div> <?php // end footer ?>
+    </div>
+</body>
+</html>

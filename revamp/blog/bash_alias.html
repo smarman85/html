@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity with Bash</title>
+    <link rel="stylesheet" href="../stylesheets/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars3.githubusercontent.com/u/4985101?v=3&amps=460" alt="Me">
+            <ul class="nav">
+                <!-- <li><a href="#top">HOME</a></li> -->
+                <li><a href="../index.html">ABOUT</a></li>
+                <li><a href="../index.html">CONTACT</a></li>
+                <li><a href="../index.html">PROJECTS</a></li>
+            </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="filler"></div>
+
+        <div class="body_content">
+
+                <div class="page_content">
+
+                    <div class="title">
+
+                        <h2>Productivity with Bash</h2>
+                        <span class="date_posted">Posted On: 01.17.15</span>
+
+                    </div><?php // end title ?>
+
+                    <div class="blog_text">
+
+                        <p>
+                          Computers are amazing at making repetative tasks faster and less tedious, so why do we insist on running the same long winded bash command over and over again. Well search no longer, there are some great bash alias you can create to make your typing slightly more enjoyable; not to mention, people will think you're magic. Over the course of this tutorial, we are going to cover simple bash aliases and some simple functions. Without further ado, bash alias' can take a lot of the typing out of running command on your computer. We will start off with a simple alias that will take you to a specific directory on your computer regardless of your pwd.  
+                        </p>
+
+                        <p>
+                          I tend to keep all of my repositories in my documents folder so changing directories used to look someting like this for me.
+                        </p>
+
+                        <div class="mark-down">
+                          <span class="ruby-constant">$ cd /Users/username/Documents/repos/DBC </span>
+                        </div>
+
+                        <p>
+                          With a little bit of bash knowledge we could cut 20 plus letters from a simple command. First off we need to know the our username on the computer we are working on. On the command line we run the following command to get that information.  
+                         <div class="mark-down">
+                            <span class="ruby-constant">$ whoami</span>
+                         </div>
+                        </p>
+                
+                        <p>
+                          Then from inside the directory we desire to cd into much faster, you can run "pwd" to get the present working directory. Once armed with all of this information we need to open up our .bash_profile, which lives at the root of our machine. For ease of use we are going to use VIM to open the file. On the command line we are going to run.
+                        </p>
+
+                        <div class="mark-down">
+                          <span class="ruby-constant">vim ~/.bash_profile</span>
+                        </div>
+
+                        <p>
+                          Inside this file we will find a lot of aliases and other very usefull information about our user setting, but for now all we are interested in is adding the following command to the profile. A few usefull vim commands to help you along are shift + G will take you to the end of the file and "i" will place you into insert mode, so you can type.
+                        </p>
+
+                        <div class="mark-down">
+                          <span class="ruby-constant">alias dbc=' cd /Users/username_that_you_found_with_whoami/Documents/repos/DBC/' </span>
+                        </div>
+
+                        <p>
+                          ** important, there can be no spaces between the alias name, the '=' and the begining of the "'". Once all of this is in place, hit the escape key a few times to take you out of insert mode and type :wq to save the document and close it. After you restart your terminal all you need to do is type 'dbc' in the command line and hit enter to wisk yourself over to your linked repo.  
+                        </p>
+                        
+                        <p>
+                          Aliases work well for static commands, but what if we want to open up different files to see how they run in Chrome. The basic way would be to cd into the directory your file lives in and run the command:
+                        </p>
+                        <div class="mark-down">
+                          <span class="ruby-constant">
+                            $ open -a "Google Chrome" index.html
+                          </span>
+                        </div>
+
+                        <p>
+                          This works well for a while, but we are devlopers damit, there must be an easier way to this, well as you may have guessed, there is. In our bash profiel we are allowed to write functions that accept arguments, just like any other Ruby, JS, or PHP file. With the following command in our bash profile, we can create a named function, we will call "Chrome" but you can call it what ever your heart desires.   
+                        </p>
+
+                        <div class="mark-down">
+                          <span class="ruby-constant">
+                            function chrome() { open -a "Google Chrome" "$1"; }  
+                          </span>
+                        </div>
+
+                        <p>
+                          After we restart our terminal we are able run the following in our terminal to open the index.html file, in our current directory. 
+                        </p>
+
+                        <div class="mark-down">
+                          <span class="ruby-constant">
+                            $ chrome index.html 
+                          </span>
+                        </div>
+                        
+                        <p>
+                          Here we didn't save too many letters, but for ease of use I think this is an amazing tool to speed up any workflow. Well that's all for now, I will keep researching and come up with some more shortcuts soon. 
+                        </p>
+
+                    </div> <?php //end blog text ?>
+
+                </div><?php // end page_content ?>
+
+            </div><?php // end body_content ?>
+
+            <div class="side_bar">
+
+
+            <h3>Blog Posts</h3>
+
+            <ul class="sidebar-links">
+
+                <li><a href="bash_alias.html">Bash Profile Settings</a></li>
+                    <p>Speeding up your workflow by adding some useful shortcuts</p>
+                <li><a href="t1-git-blog.html">Version Controll</a></li>
+                    <p>The importance of GIT and how it knows when you make changes.</p>
+                <li><a href="c1-chefs-kitchen.html">Fireside Chat</a></li>
+                    <p>My perception of DBC after reading up on its dev culture.</p>
+                <li><a href="t2-css-design.html">CSS Display</a></li>
+                    <p>Making css display properties just a little more clear.</p>
+                <li><a href="t4-arrays-hashes.html">Arrays & Hashes</a></li>
+                    <p>The differences and similarites between Ruby arrays and Hashes</p>
+                <li><a href="c3_thinking-style.html">Meta-Thinking</a></li>
+                    <p>A little blurb on me and how I think.</p>
+                <li><a href="t4-enumerable-methods.html">Group_By</a></li>
+                    <p>Learning to use some of the amazing Ruby built in methods.</p>
+                <li><a href="c4-tech-issues.html">Issues in Tech</a></li>
+                    <p>Diversity: an issue facing the tech world today.</p>
+                <li><a href="c5-feedback.html">Getting Feedback</a></li>
+                    <p>Learning how to take feedback on my work</p>
+                <li><a href="t5-ruby-classes.html">Ruby Classes</a></li>
+                    <p>Getting a littl OOP with Ruby Classes</p>
+                <li><a href="c6-stereotype-threat.html">Stereotype Threat</a></li>
+                    <p>Confronting your biggest enemy, yourself.</p>
+                <li><a href="t6-oop-concepts.html">Variable Scope</a></li>
+                    <p>Variable scope and how to avoid some frustration</p>
+                <li><a href="t6-javascript.html">JavaScript DOCs</a></li>
+                    <p>What I like about Ruby Docs in relation to JavaScript Docs</p>
+                <li><a href="c7-oop-concepts.html">Values</a></li>
+                    <p>Getting to know a little bit about me and my values</p>
+                <li><a href="c8-conflict.html">Conflict</a></li>
+                    <p>Some thoughts on dealing with interpersonal conflict</p>
+                <li><a href="t8-tech.html">NoSQL</a></li>
+                    <p>How NoSQL databases are revolutionizing data.</p>
+                <li><a href="c9-questions.html">Asking Questions</a></li>
+                    <p>How to form better questions to not waste your peers time</p>
+                <li><a href="../git-cheatsheet.html">GIT CHEATSHEET</a></li>
+                    <p>Everyone GITs a little help every now and then.</p>
+
+            </ul>
+
+        </div> <?php //end side_bar ?>
+        <div class="footer">
+
+            <ul>
+
+                <li><a href="https://www.linkedin.com/pub/sean-marman/22/6/869"><img src="../imgs/linkedin.png" alt=""></a></li>
+                <li><a href="https://twitter.com/smarman85"><img src="../imgs/twitter.png" alt=""></a></li>
+                <li><a href="https://github.com/smarman85"><img src="../imgs/GitHub.png" alt=""></a></li>
+                <li><a href="https://plus.google.com/u/0/108895157342241523043/posts"><img src="../imgs/google_plus.png" alt=""></a></li>
+
+            </ul>
+
+        </div> <?php // end footer ?>
+    </div>
+</body>
+</html>
