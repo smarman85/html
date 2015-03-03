@@ -29,41 +29,42 @@ header {
     width: 57px;
     font-size: 3em; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    header .hamburger {
-      display: none; } }
-  @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (min-width: 320px) {
-    header .hamburger {
-      display: block; }
-    header .links {
-      display: none; }
-    header #mobile-menu {
-      width: 100%;
-      margin: 0;
-      float: none; }
-      header #mobile-menu li {
-        height: 39px;
-        margin-left: 0px;
-        margin-top: 20px;
-        border-bottom: 1px solid yellow;
+    header {
+      /* Styles */ }
+      header .hamburger {
+        display: none; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header {
+      /* Styles */ }
+      header .hamburger {
+        display: block; }
+      header #mobile-menu {
         width: 100%;
-        text-align: center;
-        color: yellow; } }
-  @media (min-width: 1024px) {
-    header .hamburger {
-      display: none; }
-    header .mobile-menu {
-      display: none; } }
+        margin: 0;
+        float: none; }
+        header #mobile-menu li {
+          height: 39px;
+          margin-left: 0px;
+          margin-top: 20px;
+          border-bottom: 1px solid yellow;
+          width: 100%;
+          text-align: center;
+          color: yellow; } }
+  @media only screen and (min-width: 1224px) {
+    header {
+      /* Styles */ }
+      header .hamburger {
+        display: none; }
+      header .mobile-menu {
+        display: none; } }
   header .me {
     width: 80px;
     height: auto;
     border-radius: 40px; }
-  header ul {
+  header .links {
     margin-top: 28px;
     float: right;
     margin-right: 24px; }
-    @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (min-width: 320px) {
-      header ul {
-        display: none; } }
   header li {
     display: inline-block;
     vertical-align: middle;
@@ -115,8 +116,9 @@ h2:before {
     float: left;
     margin-bottom: 2%;
     margin-left: 2%; }
-    @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (min-width: 320px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
       .projects article, .blog article {
+        /* Styles */
         border-bottom: 1px solid #cccccc;
         padding: 15px 0;
         width: 100%;
@@ -153,8 +155,9 @@ article .description {
   .contact_me .form_container {
     width: 70%;
     margin: 0 auto; }
-    @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (min-width: 320px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
       .contact_me .form_container {
+        /* Styles */
         width: 90%; } }
   .contact_me .form_subject {
     width: 45%;
@@ -173,8 +176,9 @@ article .description {
   .contact_me button {
     width: 47%;
     float: left; }
-  @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (min-width: 320px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .contact_me {
+      /* Styles */
       margin-top: 22%; }
       .contact_me .form_subject, .contact_me #contact_text, .contact_me .form_email, .contact_me input[type="submit"], .contact_me button {
         width: 100%;

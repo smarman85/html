@@ -19,37 +19,39 @@ $text-color: yellow;
 $border-color: 1px solid yellow;
 $hamburger-menu: yellow;
 
-@mixin mobile {
-  @media only screen
-  and (max-device-width: 640px),
-  only screen and (max-device-width: 667px),
-  only screen and (min-width: 320px){
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
+//@mixin mobile {
+//  @media only screen
+//  and (max-device-width: 640px),
+//  only screen and (max-device-width: 667px),
+//  only screen and (min-width: 320px){
+//    @content;
+//  }
+//}
+//
+//@mixin tablet {
+//  @media only screen
+//  and (min-device-width : 768px)
+//  and (max-device-width : 1024px) {
+//    @content;
+//  }
+//}
+//
+//@mixin desktop {
+//  @media (min-width: #{$desktop-width}) {
+//    @content;
+//  }
+//}
 
 
 // /* Smartphones (portrait and landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 320px) 
-// and (max-device-width : 480px) {
-// /* Styles */
-// }
-// 
+@mixin mobile {
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 480px) {
+  /* Styles */
+    @content;
+  }
+}
 // /* Smartphones (landscape) ----------- */
 // @media only screen 
 // and (min-width : 321px) {
@@ -63,12 +65,14 @@ $hamburger-menu: yellow;
 // }
 // 
 // /* iPads (portrait and landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) {
-// /* Styles */
-// }
-// 
+@mixin tablet {
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+  /* Styles */
+    @content;
+  }
+} 
 // /* iPads (landscape) ----------- */
 // @media only screen 
 // and (min-device-width : 768px) 
@@ -86,11 +90,13 @@ $hamburger-menu: yellow;
 // }
 // 
 // /* Desktops and laptops ----------- */
-// @media only screen 
-// and (min-width : 1224px) {
-// /* Styles */
-// }
-// 
+@mixin desktop {
+  @media only screen 
+  and (min-width : 1224px) {
+  /* Styles */
+    @content;
+  }
+} 
 // /* Large screens ----------- */
 // @media only screen 
 // and (min-width : 1824px) {
