@@ -24,20 +24,25 @@ header {
     box-shadow: 0 6px 4px 2px gray; }
   header .hamburger {
     cursor: pointer;
+    display: none;
     color: yellow;
     float: right;
     width: 57px;
     font-size: 3em; }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  @media only screen and (max-device-width: 1020px), screen and (max-width: 1020px) {
     header {
       /* Styles */ }
       header .hamburger {
+        display: none; }
+      header .mobile-menu {
         display: none; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (max-device-width: 720px), screen and (max-width: 720px) {
     header {
       /* Styles */ }
       header .hamburger {
         display: block; }
+      header .links {
+        display: none; }
       header #mobile-menu {
         width: 100%;
         margin: 0;
@@ -50,13 +55,6 @@ header {
           width: 100%;
           text-align: center;
           color: yellow; } }
-  @media only screen and (min-width: 1224px) {
-    header {
-      /* Styles */ }
-      header .hamburger {
-        display: none; }
-      header .mobile-menu {
-        display: none; } }
   header .me {
     width: 80px;
     height: auto;
@@ -65,10 +63,10 @@ header {
     margin-top: 28px;
     float: right;
     margin-right: 24px; }
-  header li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px; }
+    header .links li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
   header a {
     font-size: 1em;
     color: yellow;
@@ -116,7 +114,7 @@ h2:before {
     float: left;
     margin-bottom: 2%;
     margin-left: 2%; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media only screen and (max-device-width: 720px), screen and (max-width: 720px) {
       .projects article, .blog article {
         /* Styles */
         border-bottom: 1px solid #cccccc;
@@ -155,7 +153,7 @@ article .description {
   .contact_me .form_container {
     width: 70%;
     margin: 0 auto; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media only screen and (max-device-width: 720px), screen and (max-width: 720px) {
       .contact_me .form_container {
         /* Styles */
         width: 90%; } }
@@ -176,7 +174,7 @@ article .description {
   .contact_me button {
     width: 47%;
     float: left; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (max-device-width: 720px), screen and (max-width: 720px) {
     .contact_me {
       /* Styles */
       margin-top: 22%; }
@@ -195,9 +193,9 @@ footer {
     margin: 0 auto; }
     footer .social-links a {
       display: inline-block;
-      width: 20%;
+      width: 19%;
       margin-right: 4%; }
-    footer .social-links a:last-child {
+    footer .social-links a:nth-of-type(4) {
       margin-right: none; }
     footer .social-links img {
       width: 80%;

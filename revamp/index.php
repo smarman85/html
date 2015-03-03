@@ -326,7 +326,7 @@
         </form>
         <form class="resume_link" method="get" action="assets/SeanMarmanResume.pdf"> 
         <!-- <a class="resume_link" href="assets/SeanMarmanResume.pdf" target"_blank"="">My Resume</a>-->
-          <button type="submit">My Resume</button>
+          <button class="form_submit" type="submit">My Resume</button>
         </form>
 
         <div class="clear"></div>

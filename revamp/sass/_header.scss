@@ -13,16 +13,26 @@ header {
     -webkit-box-shadow: 0 6px 4px 2px gray;
     box-shadow: 0 6px 4px 2px gray; 
   }
-  & .hamburger {
+  .hamburger {
     cursor: pointer;
+    display: none;
     color: $hamburger-menu;
     float: right;
     width: 57px;
     font-size: 3em;
   }
 
-  @include tablet {
+  // @include tablet {
+  //   .hamburger {
+  //     display: none;
+  //   }
+  // }
+  
+  @include desktop {
     .hamburger {
+      display: none;
+    }
+    .mobile-menu {
       display: none;
     }
   }
@@ -31,7 +41,7 @@ header {
       display: block;
     }
     .links {
-      //display: none;
+      display: none;
     }
     #mobile-menu {
       width: 100%;
@@ -48,14 +58,6 @@ header {
       }
     }
   }
-  @include desktop {
-    .hamburger {
-      display: none;
-    }
-    .mobile-menu {
-      display: none;
-    }
-  }
   .me {
     width: 80px;
     height: auto;
@@ -65,11 +67,11 @@ header {
     margin-top: 28px;
     float: right;
     margin-right: 24px;
-  }
-  li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
   }
   a {
     font-size: 1em;

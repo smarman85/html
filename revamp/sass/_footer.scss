@@ -8,10 +8,10 @@ footer {
     margin: 0 auto;
     a {
       display: inline-block;
-      width: 20%;
+      width: 19%;
       margin-right: 4%;
     }
-    a:last-child {
+    a:nth-of-type(4) {
       margin-right: none;
     }
     & img {
